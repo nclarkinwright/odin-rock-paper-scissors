@@ -8,3 +8,10 @@ function getComputerChoice() {
     case 2: return 'Scissors';
   }
 }
+
+// Forces string into used capitalization format,
+// First letter uppercase, remaining lowercase
+// Used for player input
+function forceCase(string) {
+  return string[0].toUpperCase() + string.slice(1).toLowerCase();
+}
