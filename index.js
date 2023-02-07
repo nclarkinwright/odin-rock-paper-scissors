@@ -28,6 +28,7 @@ function playRound(playerSelection, computerSelection) {
     case 'Paper Rock':
     case 'Rock Paper':
       return 'Loss';
+    // Incorrect input
     default:
       return 'Error!';
   }
