@@ -9,6 +9,30 @@ function getComputerChoice() {
   }
 }
 
+function playRound(playerSelection, computerSelection) {
+  // Handle all ties
+  if (playerSelection === computerSelection) {
+    return 'Tie';
+  }
+
+  // Handle all wins/losses
+  // Combine both plays into a single string for easy case comparison
+  switch (playerSelection + ' ' + computerSelection) {
+    // All win cases
+    case 'Rock Scissors':
+    case 'Paper Rock':
+    case 'Scissors Paper':
+      return 'Win';
+    // All loss cases
+    case 'Scissors Rock':
+    case 'Paper Rock':
+    case 'Rock Paper':
+      return 'Loss';
+    default:
+      return 'Error!';
+  }
+}
+
 // Forces string into used capitalization format,
 // First letter uppercase, remaining lowercase
 // Used for player input
