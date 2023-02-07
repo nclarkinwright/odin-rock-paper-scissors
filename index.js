@@ -30,7 +30,7 @@ function playRound(playerSelection, computerSelection) {
       return 'Loss';
     // Incorrect input
     default:
-      return 'Error!';
+      return 'Error';
   }
 }
 
